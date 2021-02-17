@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="po_hmlgModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="testeRodrigo_LANCES">
+    <Key>
+      <PropertyRef Name="ID_LANCE" />
+    </Key>
+    <Property Name="ID_LANCE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" />
+    <Property Name="ID_PRODUTO" Type="int" />
+    <Property Name="VL_LANCE_ANTERIOR" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="VL_LANCE_ATUAL" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="DT_LANCE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="testeRodrigo_PRODUTO">
+    <Key>
+      <PropertyRef Name="ID_PRODUTO" />
+    </Key>
+    <Property Name="ID_PRODUTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DS_NOME_PRODUTO" Type="varchar" MaxLength="200" />
+    <Property Name="DT_INCLUSAO_PRODUTO" Type="datetime" />
+    <Property Name="DS_PRODUTO" Type="varchar" MaxLength="200" />
+    <Property Name="VL_LANCE_INICIAL" Type="numeric" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="testeRodrigo_USUARIO">
+    <Key>
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_USUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DS_NOME_USUARIO" Type="varchar" MaxLength="200" />
+    <Property Name="DT_NASCIMENTO_USUARIO" Type="date" />
+    <Property Name="DT_INCLUSAO_USUARIO" Type="datetime" />
+    <Property Name="DS_EMAIL_USUARIO" Type="varchar" MaxLength="200" />
+    <Property Name="DS_SENHA_USUARIO" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="po_hmlgModelStoreContainer">
+    <EntitySet Name="testeRodrigo_LANCES" EntityType="Self.testeRodrigo_LANCES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="testeRodrigo_PRODUTO" EntityType="Self.testeRodrigo_PRODUTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="testeRodrigo_USUARIO" EntityType="Self.testeRodrigo_USUARIO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,6 @@
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\bin\Debug\Graff.Shared.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\bin\Debug\Graff.Shared.pdb
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\obj\Debug\Graff.Shared.csprojAssemblyReference.cache
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\obj\Debug\Graff.Shared.csproj.CoreCompileInputs.cache
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\obj\Debug\Graff.Shared.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Shared\obj\Debug\Graff.Shared.pdb

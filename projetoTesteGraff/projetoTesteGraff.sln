@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graff.Teste.Web", "projetoTesteGraff\Graff.Teste.Web.csproj", "{80D96990-5D71-4DAC-BD83-A347D12E04B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Views", "3 - Views", "{0BD9DF5E-3BE6-43C6-8D36-D9CF9FE618F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Database", "1 - Database", "{E0F5184F-A213-4E4C-942F-C8838748A539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Business", "2 - Business", "{2D51C2B9-8CF9-400A-A724-36D47573DAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graff.Business", "Graff.Business\Graff.Business.csproj", "{C04BDC86-2EA9-487C-A3DF-919A4F785276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graff.Database", "Graff.Database\Graff.Database.csproj", "{7C9DEB61-67F8-49E6-8890-A4B29187B0CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Shared", "0 - Shared", "{C27F6219-3F8B-40E2-9BC2-0E139ACA35A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graff.Shared", "Graff.Shared\Graff.Shared.csproj", "{B1F1E33C-52EC-43EA-9787-D995B0821A6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80D96990-5D71-4DAC-BD83-A347D12E04B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D96990-5D71-4DAC-BD83-A347D12E04B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D96990-5D71-4DAC-BD83-A347D12E04B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D96990-5D71-4DAC-BD83-A347D12E04B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04BDC86-2EA9-487C-A3DF-919A4F785276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04BDC86-2EA9-487C-A3DF-919A4F785276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04BDC86-2EA9-487C-A3DF-919A4F785276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04BDC86-2EA9-487C-A3DF-919A4F785276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9DEB61-67F8-49E6-8890-A4B29187B0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9DEB61-67F8-49E6-8890-A4B29187B0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9DEB61-67F8-49E6-8890-A4B29187B0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9DEB61-67F8-49E6-8890-A4B29187B0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F1E33C-52EC-43EA-9787-D995B0821A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F1E33C-52EC-43EA-9787-D995B0821A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F1E33C-52EC-43EA-9787-D995B0821A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F1E33C-52EC-43EA-9787-D995B0821A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80D96990-5D71-4DAC-BD83-A347D12E04B3} = {0BD9DF5E-3BE6-43C6-8D36-D9CF9FE618F5}
+		{C04BDC86-2EA9-487C-A3DF-919A4F785276} = {2D51C2B9-8CF9-400A-A724-36D47573DAF2}
+		{7C9DEB61-67F8-49E6-8890-A4B29187B0CE} = {E0F5184F-A213-4E4C-942F-C8838748A539}
+		{B1F1E33C-52EC-43EA-9787-D995B0821A6F} = {C27F6219-3F8B-40E2-9BC2-0E139ACA35A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A9FA845-77B5-430D-921D-2DF75B5C1E27}
+	EndGlobalSection
+EndGlobal

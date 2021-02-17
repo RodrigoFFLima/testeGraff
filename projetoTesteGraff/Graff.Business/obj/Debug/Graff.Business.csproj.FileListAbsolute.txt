@@ -1,0 +1,15 @@
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Business.dll.config
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Business.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Business.pdb
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Database.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Database.pdb
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Database.dll.config
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\obj\Debug\Graff.Business.csprojAssemblyReference.cache
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\obj\Debug\Graff.Business.csproj.CoreCompileInputs.cache
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\obj\Debug\Graff.Business.csproj.CopyComplete
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\obj\Debug\Graff.Business.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\obj\Debug\Graff.Business.pdb
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\EntityFramework.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\EntityFramework.xml
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Shared.dll
+D:\Users\rodri\source\repos\projetoTesteGraff\Graff.Business\bin\Debug\Graff.Shared.pdb

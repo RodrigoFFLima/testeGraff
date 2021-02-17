@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="po_hmlgModelStoreContainer" CdmEntityContainer="ModeloContainer">
+    <EntitySetMapping Name="testeRodrigo_LANCES">
+      <EntityTypeMapping TypeName="po_hmlgModel.testeRodrigo_LANCES">
+        <MappingFragment StoreEntitySet="testeRodrigo_LANCES">
+          <ScalarProperty Name="DT_LANCE" ColumnName="DT_LANCE" />
+          <ScalarProperty Name="VL_LANCE_ATUAL" ColumnName="VL_LANCE_ATUAL" />
+          <ScalarProperty Name="VL_LANCE_ANTERIOR" ColumnName="VL_LANCE_ANTERIOR" />
+          <ScalarProperty Name="ID_PRODUTO" ColumnName="ID_PRODUTO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_LANCE" ColumnName="ID_LANCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="testeRodrigo_PRODUTO">
+      <EntityTypeMapping TypeName="po_hmlgModel.testeRodrigo_PRODUTO">
+        <MappingFragment StoreEntitySet="testeRodrigo_PRODUTO">
+          <ScalarProperty Name="VL_LANCE_INICIAL" ColumnName="VL_LANCE_INICIAL" />
+          <ScalarProperty Name="DS_PRODUTO" ColumnName="DS_PRODUTO" />
+          <ScalarProperty Name="DT_INCLUSAO_PRODUTO" ColumnName="DT_INCLUSAO_PRODUTO" />
+          <ScalarProperty Name="DS_NOME_PRODUTO" ColumnName="DS_NOME_PRODUTO" />
+          <ScalarProperty Name="ID_PRODUTO" ColumnName="ID_PRODUTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="testeRodrigo_USUARIO">
+      <EntityTypeMapping TypeName="po_hmlgModel.testeRodrigo_USUARIO">
+        <MappingFragment StoreEntitySet="testeRodrigo_USUARIO">
+          <ScalarProperty Name="DS_SENHA_USUARIO" ColumnName="DS_SENHA_USUARIO" />
+          <ScalarProperty Name="DS_EMAIL_USUARIO" ColumnName="DS_EMAIL_USUARIO" />
+          <ScalarProperty Name="DT_INCLUSAO_USUARIO" ColumnName="DT_INCLUSAO_USUARIO" />
+          <ScalarProperty Name="DT_NASCIMENTO_USUARIO" ColumnName="DT_NASCIMENTO_USUARIO" />
+          <ScalarProperty Name="DS_NOME_USUARIO" ColumnName="DS_NOME_USUARIO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
