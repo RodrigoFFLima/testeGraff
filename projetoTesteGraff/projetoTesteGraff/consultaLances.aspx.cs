@@ -70,13 +70,15 @@ namespace projetoTesteGraff
 
             foreach (var item in lLances)
             {
+                int? codigoProduto = 0;
+
                 testeRodrigo_PRODUTO p = new testeRodrigo_PRODUTO();
                 p = cadastraProdutoBusiness.getProdutoByCodigo(Convert.ToInt32(item.ID_PRODUTO));
 
                 testeRodrigo_USUARIO u = new testeRodrigo_USUARIO();
                 u = cadastraUsuarioBusiness.getUsuarioByCodigo(Convert.ToInt32(item.ID_USUARIO));
 
-                if (u.DS_NOME_USUARIO.Contains(search.Value))
+                if (u.DS_NOME_USUARIO.Contains(searchUsuario.Value) && !string.IsNullOrEmpty(searchUsuario.Value) && codigoProduto != 0)
                 {
                     string tbdoyLance = "<tr> " +
                     "            <td>{0}</td> " +
@@ -86,7 +88,39 @@ namespace projetoTesteGraff
                     "            <td>{4}</td> " +
                     "        </tr> ";
 
-                    lances += string.Format(tbdoyLance, p.DS_NOME_PRODUTO, p.DS_PRODUTO, u.DS_NOME_USUARIO, item.VL_LANCE_ATUAL, Convert.ToDateTime(item.DT_LANCE.ToString()).ToShortDateString());
+                    codigoProduto = item.ID_PRODUTO;
+
+                    lances += string.Format(tbdoyLance, p.DS_NOME_PRODUTO, p.DS_PRODUTO, u.DS_NOME_USUARIO, item.VL_LANCE_ATUAL, Convert.ToDateTime(item.DT_LANCE.ToString()));
+                }
+
+                if (p.DS_NOME_PRODUTO.Contains(searchProduto.Value) && !string.IsNullOrEmpty(searchProduto.Value) && codigoProduto != 0)
+                {
+                    string tbdoyLance = "<tr> " +
+                    "            <td>{0}</td> " +
+                    "            <td>{1}</td> " +
+                    "            <td>{2}</td> " +
+                    "            <td>R$ {3}</td> " +
+                    "            <td>{4}</td> " +
+                    "        </tr> ";
+
+                    codigoProduto = item.ID_PRODUTO;
+
+                    lances += string.Format(tbdoyLance, p.DS_NOME_PRODUTO, p.DS_PRODUTO, u.DS_NOME_USUARIO, item.VL_LANCE_ATUAL, Convert.ToDateTime(item.DT_LANCE.ToString()));
+                }
+
+                else if (codigoProduto == 0)
+                {
+                    string tbdoyLance = "<tr> " +
+                    "            <td>{0}</td> " +
+                    "            <td>{1}</td> " +
+                    "            <td>{2}</td> " +
+                    "            <td>R$ {3}</td> " +
+                    "            <td>{4}</td> " +
+                    "        </tr> ";
+
+                    codigoProduto = item.ID_PRODUTO;
+
+                    lances += string.Format(tbdoyLance, p.DS_NOME_PRODUTO, p.DS_PRODUTO, u.DS_NOME_USUARIO, item.VL_LANCE_ATUAL, Convert.ToDateTime(item.DT_LANCE.ToString()));
                 }
 
             }

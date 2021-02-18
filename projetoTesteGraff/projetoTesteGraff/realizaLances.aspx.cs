@@ -25,7 +25,6 @@ namespace projetoTesteGraff
             {
                 if (UsuarioLogado == null)
                     Response.Redirect("realizaLogin.aspx", true);
-
             }
         }
 
@@ -59,8 +58,6 @@ namespace projetoTesteGraff
 
         protected void cbxProdutos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DropDownList dll = sender as DropDownList;
-
             var ultimoLance = realizaLanceBusiness.getLanceAnterior(Convert.ToInt32(cbxProdutos.SelectedItem.Value));
 
             if (ultimoLance != null)
@@ -69,5 +66,15 @@ namespace projetoTesteGraff
                 txtUltimoLance2.Text = "R$ " + cadastraProdutoBusiness.getProdutoByCodigo(Convert.ToInt32(cbxProdutos.SelectedItem.Value)).VL_LANCE_INICIAL.ToString();
         }
 
+        protected void cbxProdutos_DataBound(object sender, EventArgs e)
+        {
+            InsertFirstItemDropDownList(sender as DropDownList, "-- Selecione um Produto --");
+        }
+
+        private void InsertFirstItemDropDownList(DropDownList cmb, string text)
+        {
+            cmb.Items.Insert(0, new ListItem(text, "0"));
+            cmb.Items[0].Selected = true;
+        }
     }
 }

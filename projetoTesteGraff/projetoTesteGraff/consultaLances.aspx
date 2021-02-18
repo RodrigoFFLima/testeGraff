@@ -5,12 +5,20 @@
         <div class="col-sm-3">
             <h2><%: Title %> </h2>
         </div>
-        <div class="col-sm-6">
-
+        <div class="col-sm-3">
             <div class="input-group h2">
-                <input name="data[search]" class="form-control" runat="server" id="search" type="text" placeholder="Filtrar usuário">
+                <input name="data[search]" class="form-control" runat="server" id="searchUsuario" type="text" placeholder="Filtrar usuário">
                 <span class="input-group-btn">
-                <asp:Button runat="server" ID="btnPesquisar" CssClass="btn btn-primary" Text="Pesquisar" OnClick="btnPesquisar_Click"/>
+                    <asp:Button runat="server" ID="btnPesquisarUsuario" CssClass="btn btn-primary" Text="Pesquisar" OnClick="btnPesquisar_Click" />
+                </span>
+            </div>
+
+        </div>
+        <div class="col-sm-3">
+            <div class="input-group h2">
+                <input name="data[search]" class="form-control" runat="server" id="searchProduto" type="text" placeholder="Filtrar Produto">
+                <span class="input-group-btn">
+                    <asp:Button runat="server" ID="btnPesquisarProduto" CssClass="btn btn-primary" Text="Pesquisar Produto" OnClick="btnPesquisar_Click" />
                 </span>
             </div>
 
@@ -19,6 +27,13 @@
             <a runat="server" id="btnNovoProduto" href="~/cadastraProdutos" class="btn btn-primary pull-right h2">Novo Produto</a>
         </div>
     </div>
+<%--    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-9">
+            <p style="margin-top: 1%">*Atenção: não é possível realizar o filtro de forma simultanea,</p>
+        </div>
+        </div>--%>
     <!-- /#top -->
 
 

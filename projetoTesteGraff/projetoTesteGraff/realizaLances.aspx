@@ -8,7 +8,7 @@
         <div class="row">
             <div class="form-group col-md-12">
                 <label for="exampleInputEmail1">Selecione um produto: </label>
-                <asp:DropDownList ID="cbxProdutos" runat="server" CssClass="form-control" DataSourceID="dsProdutos" DataTextField="DS_NOME_PRODUTO" DataValueField="ID_PRODUTO" OnSelectedIndexChanged ="cbxProdutos_SelectedIndexChanged" AutoPostBack="true">
+                <asp:DropDownList ID="cbxProdutos" runat="server" CssClass="form-control" DataSourceID="dsProdutos" DataTextField="DS_NOME_PRODUTO" DataValueField="ID_PRODUTO" OnSelectedIndexChanged ="cbxProdutos_SelectedIndexChanged" AutoPostBack="true" OnDataBound="cbxProdutos_DataBound">
                 </asp:DropDownList>
             <asp:ObjectDataSource ID="dsProdutos" runat="server" SelectMethod="getAllProdutos" TypeName="Graff.Business.CadastraProdutoBusiness"></asp:ObjectDataSource>
             </div>
